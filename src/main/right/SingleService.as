@@ -27,7 +27,6 @@ package {
 
 		public function serviceCompleteHandler(event:Event):void {
 			var messageEvent:MessageEvent = new MessageEvent(MessageEvent.MESSAGE, event.target.data as String);
-			//messageEvent.target = this;
 			this.dispatchEvent(messageEvent);
 		}
 
